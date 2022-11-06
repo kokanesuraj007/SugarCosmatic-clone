@@ -1,0 +1,71 @@
+
+#left_div:hover {
+    cursor: pointer;
+}
+#payment-Div{
+    width: 494px;
+    margin: 0 auto 97px;
+    /* padding-top: 114px; */
+}
+#box-shadow{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#pay-heading{
+    /* height: 66px; */
+    background-color: #f5f5f5;
+    padding:5px;
+}
+#title{
+    font-size: 14px;
+    line-height: .75;
+    text-align: left;
+    /* font-weight: bold; */
+    color:#67757d;
+}
+#nextpay-div{
+    width:100%;
+    padding:10px 0px;
+}
+.sameFunc{
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 10px 20px;
+    background-color: hsla(0,0%,94.1%,.53);
+    display: flex;
+    align-content: center;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.sameFunc>div>img{
+    width: 23px;
+    height: auto;
+    margin-right: 10px;
+}
+#paytm>img,#amazon>img{
+    width: 64px;
+    height: auto;
+}
+#paytm,#amazon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: hsla(0,0%,94.1%,.53);
+}
+.sameFunc>i{
+    color:grey;
+    font-size: 20px;
+}
+#paytm,#amazon>a{
+    color:grey; 
+    font-weight: 500;
+}
+#right_div>div:nth-child(6)>a:hover{
+    color:#20c997;
+}

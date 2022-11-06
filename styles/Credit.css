@@ -1,0 +1,180 @@
+
+#left_div:hover {
+    cursor: pointer;
+}
+#payment-Div{
+    width: 494px;
+    margin: 0 auto 97px;
+    /* padding-top: 114px; */
+}
+#box-shadow{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#pay-heading{
+    /* height: 66px; */
+    background-color: #f5f5f5;
+    padding:5px;
+}
+#title{
+    font-size: 14px;
+    line-height: .75;
+    text-align: left;
+    /* font-weight: bold; */
+    color:#67757d;
+}
+#nextpay-div{
+    width:100%;
+    padding:10px 0px;
+}
+.sameFunc{
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 10px 20px;
+    background-color: hsla(0,0%,94.1%,.53);
+    display: flex;
+    align-content: center;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.sameFunc>div>img{
+    width: 23px;
+    height: auto;
+    margin-right: 10px;
+}
+#paytm>img,#amazon>img{
+    width: 64px;
+    height: auto;
+}
+#paytm,#amazon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: hsla(0,0%,94.1%,.53);
+}
+.sameFunc>i{
+    color:grey;
+    font-size: 20px;
+}
+#paytm,#amazon>a{
+    color:grey; 
+    font-weight: 500;
+}
+#right_div>div:nth-child(6)>a:hover{
+    color:#20c997;
+}
+
+/* //--credit shuru-------------- */
+#credit-card{
+    border: 1px solid#e0e0e0;
+    background-color:  hsla(0,0%,94.1%,.53);
+    margin-bottom: 10px;
+    border-radius: 5px;
+ }
+ #credit-card>form{
+     padding: 0px 18px 0px 18px;
+     display: flex;
+     flex-direction: column; 
+     margin-top: -10px;
+     border: none;
+ }
+ #credit-card>div{
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+     padding: 18px 20px;
+     background-color: hsla(0,0%,94.1%,.53);
+     display: flex;
+     align-content: center;
+     cursor: pointer;
+     align-items: center;
+     justify-content: space-between;
+     margin-bottom: 10px;
+     border: none;
+ }
+ #credit-card>div>div>img{
+     width: 23px;
+     height: auto;
+     margin-right: 10px;
+ }
+ .fillinginput{
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 20px;
+ }
+ #onlyfilling{
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 20px;
+     width: 100%;
+     /* border: 1px solid red; */
+ }
+ .doSmall{
+     font-size: 13px;
+     font-weight: 400;
+     font-style: normal;
+     font-stretch: normal;
+     line-height: 1;
+     letter-spacing: normal;
+     text-align: left;
+     color: #707070;
+     display: inline-block;
+     margin-bottom: 0.5rem;
+ }
+ #mycard-number,#mycard-name{
+     display: block;
+     width: 94%;
+     padding: 0.375rem 0.75rem;
+     font-size: 1rem;
+     line-height: 1.5;
+     color: #495057;
+     background-color: #fff;
+     background-image: none;
+     background-clip: padding-box;
+     border: 1px solid #ced4da;
+     border-radius: 0.25rem;
+     overflow: visible;
+     outline:none;
+ }
+ .onlyfilling>div{
+     width:50%;
+ }
+ #Expiry-date{
+     display: block;
+     width: 75%;
+     padding: 0.375rem 0.75rem;
+     font-size: 1rem;
+     line-height: 1.5;
+     color: #495057;
+     background-color: #fff;
+     background-image: none;
+     background-clip: padding-box;
+     border: 1px solid #ced4da;
+     border-radius: 0.25rem;
+     overflow: visible;
+     outline:none;
+ }
+ #CVV{
+     display: block;
+     width: 86%;
+     padding: 0.375rem 0.75rem;
+     font-size: 1rem;
+     line-height: 1.5;
+     color: #495057;
+     background-color: #fff;
+     background-image: none;
+     background-clip: padding-box;
+     border: 1px solid #ced4da;
+     border-radius: 0.25rem;
+     overflow: visible;
+     outline:none;
+ }
+ .fa-chevron-down{
+     font-size: 20px; 
+     color:grey;
+ }

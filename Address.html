@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Page</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/CartPage.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <style>
+       .formDiv{
+         display: flex;
+         flex-direction: column;
+         gap:10px;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="login-div">
+        <div id="mySidenav" class="sidenav">
+            <div class="padded-login">
+                <div>
+                    <a href="" class="closebtn" onclick="closeNav()">&times;</a>
+                </div>
+                <div>Login/Sign Up</div>
+            </div>
+            <div class="fill-div">
+                <div id="under-fill-div">
+                    <div class="fill-div-imglogin">
+                        <img src="	https://in.sugarcosmetics.com/smartphone.svg" alt="smartphone" title="smartphone"
+                            height="30px" width="30px">
+                        <div class="loginHeading">Login/Sign Up Using Phone</div>
+                    </div>
+                    <form>
+                        <div class="form-1-div">
+                            <div class="mt-2">
+                                <h4>+91</h4>
+                            </div>
+                            <div class="px-3">
+                                <div style="display: flex;">
+                                    <div class="enterform-div">
+                                        <input aria-label="Please enter verification code." class="input-num-div"
+                                            type="tel" maxlength="10" onclick="loginFun()">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-2"><button disabled="true" class="otpButtonDisabled">Request OTP</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="py-3">
+                        <p class="reqPara py-1">Enter your phone number to request an OTP</p>
+                        <hr>
+                    </div>
+                    <div class="otp-div">
+                        <p class="otpPrint">Enter the 4 digit OTP received on your phone.</p>
+                    </div>
+                    <form>
+                        <div class="forenter-otp">
+                            <div style="display: flex;">
+                                <div class="roh-otp-div">
+                                    <input aria-label="Please enter verification code." class="rohinput-otp" type="tel"
+                                        maxlength="4" onclick="otp()">
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                        <div><button type="submit" class="verifyOtpButtonDisabled" onclick="verify()">Verify
+                                OTP</button></div>
+                    </form>
+
+                    <div class="checked-div">
+                        <span class="MuiButtonBase-root MuiIconButton-root jss24 MuiCheckbox-root jss22 mt-2"
+                            aria-disabled="true">
+                            <span class="MuiIconButton-label">
+                                <input class="jss27" name="checked" type="checkbox" data-indeterminate="false" value=""
+                                    checked />
+                            </span>
+                        </span>
+                        <p class=" ml-4 whatsappPara">
+                            Get Important Updates on Whatsapp.
+                            <a href="https://in.sugarcosmetics.com/pages/terms-conditions" class="tnc">
+                                Terms and Conditions
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="py-5 text-center">
+                <p class="infoPara">Registering for this site allows you to access your order status and history. Just
+                    fill in the<br>fields below, and we'll get a new account set up for you in no time. We will only ask
+                    you<br>for information necessary to make the purchase process faster and easier.</p>
+                <p class=" py-4 disclaimerPara">By Signing up or logging in, you agree to our <a
+                        href="/pages/terms-conditions" class="tnc">Terms and Conditions</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- //login div ends -->
+    <!-- // navbar starts---------- -->
+
+    <div class="top-navbar">
+        <div id="rohlink">
+            <a href="#">
+                <p>Get a BB Cream and a Glitter Pouch on a spend of Rs.799</p>
+            </a>
+        </div>
+        <div id="fontimg">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+    <div class="above-nav">
+        <div class="Navbar">
+            <div id="roh-imgdiv">
+                <a href="index.html">
+                    <img style="cursor: pointer;" src="https://media.sugarcosmetics.com/upload/Logo-static.jpg">
+                </a>
+            </div>
+            <div id="roh-searchdiv">
+                <input type="text" class="searchInp" placeholder="Try ''Liquid Lipstick''" onmouseenter="search()" />
+                <div style="cursor: pointer;" class="search-prod">Search</div>
+            </div>
+            <div id="roh-login-div" style="cursor: pointer;" onclick="openNav()">
+                <span><i class="fa-solid fa-user"></i></span>
+                <div id="changeName"><u>Login/Register</u></div>
+            </div>
+            <div id="roh-paths" style="cursor: pointer;" onclick="cartPage()">
+                <span onmouseover="showWish()" onmouseout="hideWish()"><i class="fa-solid fa-heart"></i></span>
+                <div class="show-wish">Wishlist</div>
+                <span onmouseover="showCart()" onmouseout="hideCart()" style="display:flex;">
+                    <i class="fa-solid fa-briefcase "></i>
+                    <div class="cartcount"></div>
+                </span>
+                <div class="show-cart">Cart</div>
+                <img src="https://in.sugarcosmetics.com/desc-images/discountIcon.svg" />
+            </div>
+        </div>
+    </div>
+    <div id="roh-options-div">
+        <div id="roh-options">
+            <div class="dropdown">
+                <div class="dropbtn">MAKEUP</div>
+                <div class="dropdown-content">
+                    <a href="Products.html" class="sub-drop">LIPS</a>
+                    <div class="sub-dropdown-content">
+                        <a href="Products.html">LIPSTICK</a>
+                        <a href="">WONDER WOMAN LIPSTICK RANGE</a>
+                        <a href="">LIP CARE</a>
+                        <a href="">LIQUID LIP COLOURS</a>
+                        <a href="">LIP GLOSS & LINERS</a>
+                        <a href="">VALUE SETS</a>
+                        <a href="">GIFTING</a>
+                    </div>
+                    <a href="#" class="sub-drop">FACE</a>
+                    <div class="sub-dropdown-content">
+                        <a href="">PRIMERS</a>
+                        <a href="">POWDER/COMPACT</a>
+                        <a href="">FOUNDATION & BB CREAM</a>
+                        <a href="">CONCEALERS & CORRECTORS</a>
+                        <a href="">BLUSH</a>
+                        <a href="">HIGHLIGHTERS & CONTOUR</a>
+                        <a href="">BRONZER</a>
+                        <a href="">FACE PALLETS</a>
+                        <a href="">VALUE SETS</a>
+                    </div>
+                    <a href="#" class="sub-drop-3">EYES</a>
+                    <div class="sub-dropdown-content">
+                        <a href="">EYELINERS</a>
+                        <a href="">KAJAL</a>
+                        <a href="">EYEBROWS</a>
+                        <a href="">EYESHADOW</a>
+                        <a href="">MASCARA</a>
+                        <a href="">EYESHADOW PALLETS</a>
+                        <a href="">VALUE SETS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">BRUSHES</div>
+                <div class="dropdown-content">
+                    <a href="#">FACE BRUSHES</a>
+                    <a href="#">EYE BRUSHES</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">SKINCARE</div>
+                <div class="dropdown-content">
+                    <a href="#">MOSTURIZERS</a>
+                    <a href="#">SUNSCREEN</a>
+                    <a href="#">SETTING MISTS</a>
+                    <a href="#">COFFEE CULTURE RANGE</a>
+                    <a href="#">SHEET MASK COMBO</a>
+                    <a href="#">CITRUS GOT REAL RANGE</a>
+                    <a href="#">AQUAHOLIC RANGE</a>
+                    <a href="#">MASKS</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">TRENDING</div>
+                <div class="dropdown-content">
+                    <a href="#">SUGAR MERCH STATION</a>
+                    <a href="#">MAKEUP KITS</a>
+                    <a href="#">BEST SELLERS</a>
+                    <a href="#">SUGAR SETS</a>
+                    <a href="#">VALUE SETS</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">BLOG</div>
+                <div class="dropdown-content">
+                    <a href="#">FEATURED</a>
+                    <a href="#">MAKEUP</a>
+                    <a href="#">SKINCARE</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">
+                    <a>OFFERS</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">
+                    <a>STORES</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- // navbar-ends -->
+
+    <!-- // cart section starts -->
+
+    <div id="cart-container">
+        <div id="under-cart-cont">
+            <div class="home-cart"><i class="fa-solid fa-house"></i> / Cart</div>
+            <div class="compress-cont">
+
+                <div class="order-div">
+                    <div class="padded-order">
+                        <div class="price-shifted">
+                            <section class="roh-price-details">
+                                <img src="https://in.sugarcosmetics.com/desc-images/PriceDetails.svg">
+                                <p style="text-decoration: underline;">Price Details</p>
+                            </section>
+                            <div id="price-details">
+                                <div class="flexing-div">
+                                    <div class="under-flexing">
+                                        <img src="https://in.sugarcosmetics.com/desc-images/CartSubtotal.svg" />
+                                        <p>Cart sub Total:</p>
+                                    </div>
+                                    <div class="print-mrp">
+                                        Rs. 0.00
+                                    </div>
+                                </div>
+                                <div class="flexing-div">
+                                    <div class="under-flexing">
+                                        <img src="https://in.sugarcosmetics.com/desc-images/Shipping_Cost.svg" />
+                                        <p>Shipping Cost:</p>
+                                    </div>
+                                    <div class="print-ship">Rs. 0.00</div>
+                                </div>
+                                <div class="flexing-div">
+                                    <div class="under-flexing">
+                                        <img src="	https://in.sugarcosmetics.com/desc-images/Discount.svg" />
+                                        <p>Discount Applied:</p>
+                                    </div>
+                                    <div class="print-disc">
+                                        Rs. 0.00
+                                    </div>
+                                </div>
+                                <div class="flexing-div">
+                                    <div>
+                                        <div style="display:flex; gap:10px">
+                                            <img
+                                                src="	https://in.sugarcosmetics.com/desc-images/AmountPayable.svg" />
+                                            <p>Amount Payable:</p>
+                                        </div>
+                                        <span style="font-size:9.5px; margin-left: 25px;">Including ₹243.76 in
+                                            taxes</span>
+                                    </div>
+                                    <div class="print-pay">
+                                        Rs. 0.00
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="up-show-total-1">
+                            <div style="display:flex; gap:10px;color:#575555; font-size: 13px; text-decoration: underline;"><img
+                                    src="https://in.sugarcosmetics.com/desc-images/shopping_cart.svg" /> Order Summary
+                            </div>
+                            <div><u>
+                                    <p style="color:#575555;font-size: 13px; text-decoration: underline;">Cart Total :<span id="print-rs"></span></p>
+                                </u>
+                            </div>
+                        </div>
+                        <div class="item-added">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-div">
+                    <div class="padded-order">
+                        <div class="up-show-total-2">
+                            <div style="display:flex; gap:10px; color: #575555; font-size: 13px; text-decoration: underline;"><img
+                                    src="https://in.sugarcosmetics.com/desc-images/CustomerInformation.svg" />Contact Information</div>
+                        </div>
+                        <div class="priced-added">
+                            <div id="price-box">
+                                <div>
+                                    <form class="formDiv">
+                                        <input type="name" class="name" placeholder="Enter name" value="" required />
+                                        <input type="email" class="email" placeholder="Enter email" value="" required />
+                                        <input type="number" class="num" placeholder="Enter phone number" value="" required />
+                                        <input type="text" class="address" placeholder="Enter delivery address" value="" required />
+                                    </form>
+                                </div>
+                                <div id="buttons-div">
+                                    <div class="below-btn">
+                                        <a href="index.html">
+                                            < <span><u>Continue Shopping</u></span>
+                                        </a>
+                                    </div>
+                                    <button class="delivery">Proceed to Payment <span class="show-paisa"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- // cart section ends -->
+
+    <!-- // footer starts -->
+
+    <div class="footer_container">
+        <div class="sub-footer">
+            <div id="img-site">
+                <img src="https://in.sugarcosmetics.com/Footer_sugar_icon.png" />
+            </div>
+            <div id="social-icons">
+                <i href="https://www.facebook.com/"><img
+                        src="https://in.sugarcosmetics.com/desc-images/facebook.svg"></i>
+                <i href="https://mail.google.com"><img
+                        src="https://www.seekpng.com/png/small/983-9831667_012-329-email-icon.png"></i>
+                <i href="https://www.instagram.com/accounts/login/"><img
+                        src="https://in.sugarcosmetics.com/desc-images/Instagram.svg"></i>
+                <i href="https://in.pinterest.com/login/"><img
+                        src="https://in.sugarcosmetics.com/desc-images/Pinterest.svg"></i>
+                <i href="https://www.tumblr.com/tagged/login?sort=top"><img
+                        src="https://in.sugarcosmetics.com/desc-images/Tumblr.svg"></i>
+                <i href="https://www.youtube.com/"><img src="https://in.sugarcosmetics.com/desc-images/Youtube.svg"></i>
+                <i href="https://twitter.com/i/flow/login"><img
+                        src="https://cdn-icons-png.flaticon.com/512/107/107195.png"></i>
+            </div>
+            <div class="middle-div">
+                <div class="middle-div-half">
+                    <h4 class="h4-div">SUBSCRIBE TO OUR NEWSLETTER</h4>
+                    <div id="email-div">
+                        <input type="email" placeholder="Your email address" />
+                        <button>SIGN UP</button>
+                    </div>
+                </div>
+                <div class="middle-div-half">
+                    <h4 class="h4-div">GET THE NEW SUGAR APP TODAY</h4>
+                    <div id="app-div">
+                        <div class="h4-div">Tap into a better shopping experience</div>
+                        <img src="https://in.sugarcosmetics.com/playstore.png" />
+                        <img src="	https://in.sugarcosmetics.com/apple-store.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="information-div">
+                <h4>INFORMATION</h4>
+                <div id="sub-info">
+                    <a href="">Stores</a>
+                    <a href="">Terms & Conditions</a>
+                    <a href="">Returns</a>
+                    <a href="">FAQs</a>
+                    <a href="">About Us</a>
+                </div>
+            </div>
+            <div class="get-div">
+                <h4>GET IN TOUCH</h4>
+                <div id="sub-get-div">
+                    <div>
+                        <div id="call-us">
+                            <img src="https://in.sugarcosmetics.com/desc-images/phone_android_white.svg" />
+                            <div>Call us at</div>
+                        </div>
+                        <a href="#">1800-209-9933</a>
+                        <div style="color:#999999; font-size:12px">Monday to Friday : 9 AM to 7 PM </div>
+                    </div>
+                    <div>
+                        <div>Support</div>
+                        <a href="">hello@sugarcosmetics.com</a>
+                    </div>
+                    <div>
+                        <div>Careers</div>
+                        <a href="">We're hiring!</a>
+                    </div>
+                    <div>
+                        <div>PRESS & MEDIA</div>
+                        <a href="">pr@sugarcosmetics.com</a>
+                    </div>
+                    <div>
+                        <div>INFLUENCER COLLAB</div>
+                        <a href="">JOIN US</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="copy-right">
+            Copyright © 2022 SUGAR Cosmetics. All rights reserved.
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./scripts/CartPage.js"></script>
+<script src="./scripts/index.js"></script>
+<script>
+    document.querySelector(".delivery").addEventListener("click",goToPayment);
+     function goToPayment(){
+       window.location.href="Payment.html";
+    }
+</script>

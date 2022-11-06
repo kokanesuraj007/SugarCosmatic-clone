@@ -1,0 +1,134 @@
+.prod-container{
+    margin-top:10px;
+}
+.blured-img{
+    height:250px;
+    width:100%;
+    -webkit-filter: blur(20px);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+}
+.normal-img{
+    height:270px;
+    transform: translate(-50%,-50%)!important;
+    left: 50%!important;
+    top: 42%!important;
+    width:80%;
+    position: absolute!important;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* vertical-align: middle; */
+}
+.select-tag{
+    width:85%;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+    margin-top:20px;
+}
+#parah2{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color:grey;  
+}
+#sorting{
+    border:none;
+    padding:10px;
+    width:152px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: transparent;
+    color:grey;
+    outline: none;
+}
+#filtering{
+    border:none;
+    padding:10px;
+    width:175px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: transparent;
+    color:grey;
+    outline: none;
+}
+.lipstick-grid{
+    width:85%;
+    margin:auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:auto;
+    gap:30px;
+    margin-bottom: 50px;
+}
+.img-lips{
+    width:80%;
+    height:62%;
+}
+.boxdiv{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #ffffff;
+}
+.box2{
+    display:flex;
+    gap:5px;
+}
+.mrp-div{
+    text-decoration: line-through;
+    color:rgb(142, 141, 141);
+}
+.rating-div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px
+}
+.heartbtn{
+    width:20%;
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+    display: none;
+}
+.btn-cart{
+    width:80%;
+    background-color: #000000;
+    color:#ffffff;
+    cursor: pointer;
+    display: none;
+}
+.box4{
+    width:100%;
+    display: flex;
+}
+.rat-img{
+    margin-top: -5px;
+    width:25px;
+    background-color: transparent;
+}
+.disc{
+    color:red;
+}
+.cartcount{
+    height:13px;
+    width:10px;
+    text-align: center;
+    display: none;
+    border: 1px solid grey;
+    border-radius: 50%;
+    margin-top: -10px;
+    font-size: 12px;
+}
+

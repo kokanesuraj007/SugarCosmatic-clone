@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Cosmetics</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+
+
+</head>
+
+<body>
+
+    <div class="login-div">
+        <div id="mySidenav" class="sidenav">
+            <div class="padded-login">
+                <div>
+                    <a href="" class="closebtn" onclick="closeNav()">&times;</a>
+                </div>
+                <div>Login/Sign Up</div>
+            </div>
+            <div class="fill-div">
+                <div id="under-fill-div">
+                    <div class="fill-div-imglogin">
+                        <img src="	https://in.sugarcosmetics.com/smartphone.svg" alt="smartphone" title="smartphone"
+                            height="30px" width="30px">
+                        <div class="loginHeading">Login/Sign Up Using Phone</div>
+                    </div>
+                    <form>
+                        <div class="form-1-div">
+                            <div class="mt-2">
+                                <h4>+91</h4>
+                            </div>
+                            <div class="px-3">
+                                <div style="display: flex;">
+                                    <div class="enterform-div">
+                                        <input aria-label="Please enter verification code."
+                                            class="input-num-div" type="tel" maxlength="10" onclick="loginFun()">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-2"><button disabled="true" class="otpButtonDisabled">Request OTP</button></div>
+                        </div>
+                    </form>
+                    <div class="py-3">
+                        <p class="reqPara py-1">Enter your phone number to request an OTP</p>
+                        <hr>
+                    </div>
+                    <div class="otp-div">
+                        <p class="otpPrint">Enter the 4 digit OTP received on your phone.</p>
+                    </div>
+                    <form>
+                        <div class="forenter-otp">
+                            <div style="display: flex;">
+                                <div class="roh-otp-div">
+                                    <input aria-label="Please enter verification code."
+                                        class="rohinput-otp" type="tel" maxlength="4" onclick="otp()">
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                        <div><button type="submit" class="verifyOtpButtonDisabled" onclick="verify()">Verify OTP</button></div>
+                    </form>
+
+                    <div class="checked-div">
+                        <span class="MuiButtonBase-root MuiIconButton-root jss24 MuiCheckbox-root jss22 mt-2"
+                            aria-disabled="true">
+                            <span class="MuiIconButton-label">
+                                <input class="jss27" name="checked" type="checkbox" data-indeterminate="false" value=""
+                                    checked />
+                            </span>
+                        </span>
+                        <p class=" ml-4 whatsappPara">
+                            Get Important Updates on Whatsapp.
+                            <a href="https://in.sugarcosmetics.com/pages/terms-conditions" class="tnc">
+                                Terms and Conditions
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="py-5 text-center">
+                <p class="infoPara">Registering for this site allows you to access your order status and history. Just
+                    fill in the<br>fields below, and we'll get a new account set up for you in no time. We will only ask
+                    you<br>for information necessary to make the purchase process faster and easier.</p>
+                <p class=" py-4 disclaimerPara">By Signing up or logging in, you agree to our <a
+                        href="/pages/terms-conditions" class="tnc">Terms and Conditions</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- //login div ends -->
+     <!-- // navbar starts---------- -->
+
+    <div class="top-navbar">
+        <div id="rohlink">
+            <a href="#">
+                <p>Get a BB Cream and a Glitter Pouch on a spend of Rs.799</p>
+            </a>
+        </div>
+        <div id="fontimg">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+    <div class="above-nav">
+        <div class="Navbar">
+            <div id="roh-imgdiv">
+                <a href="index.html">
+                    <img style="cursor: pointer;" src="https://media.sugarcosmetics.com/upload/Logo-static.jpg">
+                </a>
+            </div>
+            <div id="roh-searchdiv">
+                <input type="text" class="searchInp" placeholder="Try ''Liquid Lipstick''" onmouseenter="search()"/>
+                <div style="cursor: pointer;" class="search-prod">Search</div>
+            </div>
+            <div id="roh-login-div" style="cursor: pointer;" onclick="openNav()">
+                <span><i class="fa-solid fa-user"></i></span>
+                <div id="changeName"><u>Login/Register</u></div>
+            </div>
+            <div id="roh-paths" style="cursor: pointer;" onclick="cartPage()">
+                <span onmouseover="showWish()" onmouseout="hideWish()"><i class="fa-solid fa-heart"></i></span>
+                <div class="show-wish">Wishlist</div>
+                <span onmouseover="showCart()" onmouseout="hideCart()"><i class="fa-solid fa-briefcase"></i></span>
+                <div class="show-cart">Cart</div>
+                <img src="https://in.sugarcosmetics.com/desc-images/discountIcon.svg" />
+            </div>
+        </div>
+    </div>
+    <div id="roh-options-div">
+        <div id="roh-options">
+            <div class="dropdown">
+                <div class="dropbtn">MAKEUP</div>
+                <div class="dropdown-content">
+                    <a href="products.html" class="sub-drop">LIPS</a>
+                    <div class="sub-dropdown-content">
+                        <a href="">LIPSTICK</a>
+                        <a href="">WONDER WOMAN LIPSTICK RANGE</a>
+                        <a href="">LIP CARE</a>
+                        <a href="">LIQUID LIP COLOURS</a>
+                        <a href="">LIP GLOSS & LINERS</a>
+                        <a href="">VALUE SETS</a>
+                        <a href="">GIFTING</a>
+                    </div>
+                    <a href="#" class="sub-drop">FACE</a>
+                    <div class="sub-dropdown-content">
+                        <a href="">PRIMERS</a>
+                        <a href="">POWDER/COMPACT</a>
+                        <a href="">FOUNDATION & BB CREAM</a>
+                        <a href="">CONCEALERS & CORRECTORS</a>
+                        <a href="">BLUSH</a>
+                        <a href="">HIGHLIGHTERS & CONTOUR</a>
+                        <a href="">BRONZER</a>
+                        <a href="">FACE PALLETS</a>
+                        <a href="">VALUE SETS</a>
+                    </div>
+                    <a href="#" class="sub-drop-3">EYES</a>
+                    <div class="sub-dropdown-content">
+                        <a href="">EYELINERS</a>
+                        <a href="">KAJAL</a>
+                        <a href="">EYEBROWS</a>
+                        <a href="">EYESHADOW</a>
+                        <a href="">MASCARA</a>
+                        <a href="">EYESHADOW PALLETS</a>
+                        <a href="">VALUE SETS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">BRUSHES</div>
+                <div class="dropdown-content">
+                    <a href="#">FACE BRUSHES</a>
+                    <a href="#">EYE BRUSHES</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">SKINCARE</div>
+                <div class="dropdown-content">
+                    <a href="#">MOSTURIZERS</a>
+                    <a href="#">SUNSCREEN</a>
+                    <a href="#">SETTING MISTS</a>
+                    <a href="#">COFFEE CULTURE RANGE</a>
+                    <a href="#">SHEET MASK COMBO</a>
+                    <a href="#">CITRUS GOT REAL RANGE</a>
+                    <a href="#">AQUAHOLIC RANGE</a>
+                    <a href="#">MASKS</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">TRENDING</div>
+                <div class="dropdown-content">
+                    <a href="#">SUGAR MERCH STATION</a>
+                    <a href="#">MAKEUP KITS</a>
+                    <a href="#">BEST SELLERS</a>
+                    <a href="#">SUGAR SETS</a>
+                    <a href="#">VALUE SETS</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">BLOG</div>
+                <div class="dropdown-content">
+                    <a href="#">FEATURED</a>
+                    <a href="#">MAKEUP</a>
+                    <a href="#">SKINCARE</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">
+                    <a>OFFERS</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">
+                    <a>STORES</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- // navbar-ends -->
+
+
+    <div id="roh-home-start">
+        <div class="container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img
+                            src="https://d32baadbbpueqt.cloudfront.net/Homepage/85bc9b9b-d8b3-4fa1-a1b0-a77ca9428664.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://d32baadbbpueqt.cloudfront.net/Homepage/85bc9b9b-d8b3-4fa1-a1b0-a77ca9428664.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://d32baadbbpueqt.cloudfront.net/Homepage/5dfdfad9-7419-46b3-85dc-1cde9429619d.gif" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://d32baadbbpueqt.cloudfront.net/Homepage/eedba493-c795-435f-b323-a026045a571b.gif" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://d32baadbbpueqt.cloudfront.net/Homepage/be784c39-2c84-45d0-89c4-e79f72b380b0.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://d32baadbbpueqt.cloudfront.net/Homepage/0a0d2b46-e424-4f4c-baf3-da2d2fc14f88.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://d32baadbbpueqt.cloudfront.net/Homepage/efc32eea-4d1e-4275-b72d-13a399550ba4.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://d32baadbbpueqt.cloudfront.net/Homepage/32e53a7b-879e-4c34-a5bc-b95c85ee4a9e.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://d32baadbbpueqt.cloudfront.net/Homepage/85bc9b9b-d8b3-4fa1-a1b0-a77ca9428664.jpg" />
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <!-- // next refer img -->
+        <div class="refer-div">
+            <h2>REFER YOUR FRIENDS</h2>
+            <div class="refer-img">
+                <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/b7d9027a-a2c1-442e-a804-424d703a64d3.jpg" />
+            </div>
+        </div>
+        <div class="video-div">
+            <h2>CONTOUR DE FORCE EYES & FACE PALETTE</h2>
+            <div>
+                <iframe width="1300px" height="450" src="https://www.youtube.com/embed/1_CEXA8sfY8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- // slider after video start -->
+        <div class="best-div">
+            <h2>BESTSELLERS</h2>
+            <div class="parent">
+                <div id="leftarrow" onclick="moveLeft()">
+                    <button>&lt;</button>
+                </div>
+                <div class="child" id="c1">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/0906/2558/products/382512089-mettle-priming-balm-01.jpg?v=1648654861" />,
+                    <p>METTLE PRIMING BALM</p>
+                    <p>₹1099</p>
+                    <button>ADD TO CART</button>
+                </div>
+                <div class="child" id="c2">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/0906/2558/products/AirKissPowderPoweredByImagesArtboard1.jpg?v=1644813116" />,
+                    <p>AIR KISS POWDER LIPSTICK</p>
+                    <p>₹499</p>
+                    <button>SELECT SHADE</button>
+                </div>
+                <div class="child" id="c3">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_61109b87-1ae6-4cb4-8550-5b57d688a4eb.jpg?v=1651852771" />,
+                    <p>BLING LEADER ILLUMINATING</p>
+                    <p>₹599</p>
+                    <button>SELECT SHADE</button>
+                </div>
+                <div class="child" id="c4">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_ef579f2e-602e-4d2f-bed2-bf0efdf4f184.jpg?v=1644325813" />,
+                    <p>SMUDGE ME NOT LIQUID LIPSTICK</p>
+                    <p>₹499</p>
+                    <button>SELECT SHADE</button>
+                </div>
+                <div class="child" id="c5">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/0906/2558/products/10_399a571c-c091-4d1c-bc17-111b7da9cd4e.jpg?v=1648741253" />,
+                    <p>SET THE TONED TINTED POWDER</p>
+                    <p>₹699</p>
+                    <button>SELECT SHADE</button>
+                </div>
+                <div class="child" id="c6">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_c30a9b16-ef13-44c3-af41-04b227c62419.jpg?v=1642434141" />,
+                    <p>LIP ZIP MATTE TOPPER</p>
+                    <p>₹499</p>
+                    <button>ADD TO CART</button>
+                </div>
+                <div class="child" id="c7">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/0906/2558/products/01_d6ffec78-c2b6-4466-8672-233fee0285a8.jpg?v=1644394232" />,
+                    <p>MATTE AS HELL CRAYON LIPSTICK</p>
+                    <p>₹799</p>
+                    <button>SELECT SHADE</button>
+                </div>
+                <div class="child" id="c8">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-goddess-of-flawless-spf30-bb-cream-07-vanilla-latte-fair-12796432941139.jpg?v=1619114695" />,
+                    <p>GODDESS OF FLAWLWSS SPF30+ BB CREAM </p>
+                    <p>₹699</p>
+                    <button>SELECT SHADE</button>
+                </div>
+                <div class="child" id="c9">
+                    <img src="https://cdn.shopify.com/s/files/1/0906/2558/products/01.jpg?v=1644399711" />,
+                    <p>KOHL OF HONOUR INTENSE KAJAL </p>
+                    <p>₹249</p>
+                    <button>SELECT SHADE</button>
+                </div>
+                <div class="child" id="c10">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/0906/2558/products/01_59809bd6-49ef-4c6b-b262-47002bedc963.jpg?v=1639755559" />,
+                    <p>BLEND THE RULES EYESHADOW PALETTE</p>
+                    <p>₹1199</p>
+                    <button>SELECT SHADE</button>
+                </div>
+                <div class="child" id="c11">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_e9355d54-6ddb-4aa4-bdfc-176a676db886.jpg?v=1657257149" />,
+                    <p>BASE OF GLORY PORE MINIMIZING PRIMER</p>
+                    <p>₹799</p>
+                    <button>ADD TO CART</button>
+                </div>
+                <div class="child" id="c12">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_51afaa84-af89-42b5-bdb8-a51b01257bc0.jpg?v=1639582607" />,
+                    <p>CONTOUR DE FORCE FACE PALATTE</p>
+                    <p>₹799</p>
+                    <button>SELECT SHADE</button>
+                </div>
+                <div class="child" id="c13">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-arrested-for-overstay-waterproof-eyeliner-01-i-ll-be-black-black-12784884973651.jpg?v=1619101912" />,
+                    <p>ARRESTED FOR OVERSTAY WATERPROOF EYELINER-O1 I'LL BE BLACK (BLACK)</p>
+                    <p>₹899</p>
+                    <button>ADD TO CART</button>
+                </div>
+                <div class="child" id="c14">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-all-set-to-go-banana-powder-13289662218323.jpg?v=1619115199" />,
+                    <p>ALL SET TO GO BANANA POWDER</p>
+                    <p>₹599</p>
+                    <button>ADD TO CART</button>
+                </div>
+                <div class="child" id="c15">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-tipsy-lips-moisturizing-balm-01-mojito-15057279877203.jpg?v=1619122412" />,
+                    <p>TIPSY LIPS MOSTURIZING BALM</p>
+                    <p>₹199</p>
+                    <button>SELECT SHADE</button>
+                </div>
+                <div class="child" id="c16">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_51afaa84-af89-42b5-bdb8-a51b01257bc0.jpg?v=1639582607" />,
+                    <p>CONTOUR DE FORCE FACE PALATTE</p>
+                    <p>₹799</p>
+                    <button>SELECT SHADE</button>
+                </div>
+
+                <div id="rightarrow" onclick="moveRight()">
+                    <button>&gt;</button>
+                </div>
+            </div>
+        </div>
+        <!-- //quick beauty part start -->
+        <div class="quickbeauty-div">
+            <h2>QUICK BEAUTY TIPS WITH SUGAR</h2>
+            <div class="container">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img
+                                src="https://d32baadbbpueqt.cloudfront.net/Homepage/64f2889d-e2d9-4047-82cd-e0e820230a77.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="https://d32baadbbpueqt.cloudfront.net/Homepage/36e44ab4-2b5b-4b5c-b35a-fb56a9c59f1a.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="https://d32baadbbpueqt.cloudfront.net/Homepage/fb3fbeba-23b1-42cf-946d-d69c2a3f393f.jpg" />
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+
+        <!-- //hot deals start -->
+        <h2 style="text-align: center; margin-bottom: -20px; margin-top: -20px;">HOT DEALS</h2>
+
+        <section class="productsecond">
+            <button class="pre-btn"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="product-container">
+
+                <div class="product-cardagain">
+                    <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/267d9b68-40e3-4efb-bda1-f534f475ee24.jpg">
+                </div>
+                <div class="product-cardagain">
+                    <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/b8278548-ed11-44b4-9818-25c5146c604d.jpg">
+                </div>
+                <div class="product-cardagain">
+                    <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/7145deaa-8296-49ba-9964-061fded28226.jpg">
+                </div>
+                <div class="product-cardagain">
+                    <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/2cd03446-33d8-47df-982a-3991ac582be1.jpg">
+                </div>
+                <div class="product-cardagain">
+                    <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/d81e88d8-712e-4e18-90f2-93bd27236050.jpg">
+                </div>
+                <div class="product-cardagain">
+                    <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/7b817474-27aa-4c69-816d-960bfbc1d2a9.jpg">
+                </div>
+
+            </div>
+            <button class="nxt-btn"><i class="fa-solid fa-chevron-right"></i></button>
+        </section>
+    </div>
+    </div>
+
+    <!-- // newly launched------------- -->
+    <div class="newly-div">
+        <h2>NEWLY LAUNCHED</h2>
+        <div class="container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img
+                            src="https://d32baadbbpueqt.cloudfront.net/Homepage/6985f902-c3fe-4a20-bc76-1658a9109fd1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://d32baadbbpueqt.cloudfront.net/Homepage/730cf92b-3d4a-4d08-bed8-db88e7911f32.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://d32baadbbpueqt.cloudfront.net/Homepage/a1ea3283-9593-4f1c-8e6b-70c3a5062c37.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://d32baadbbpueqt.cloudfront.net/Homepage/37471559-27d1-4509-9e31-29d889be7036.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://d32baadbbpueqt.cloudfront.net/Homepage/f25612b8-b6b8-4d08-8704-def43067c472.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://d32baadbbpueqt.cloudfront.net/Homepage/f190c764-84cf-4eea-a381-8b701be65852.gif" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://d32baadbbpueqt.cloudfront.net/Homepage/f25612b8-b6b8-4d08-8704-def43067c472.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://d32baadbbpueqt.cloudfront.net/Homepage/89e51326-1363-44e1-94f1-d5bd00bd2ca9.gif" />
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- //footer starts -->
+
+    <div class="footer_container">
+        <div class="sub-footer">
+            <div id="img-site">
+                <img src="https://in.sugarcosmetics.com/Footer_sugar_icon.png" />
+            </div>
+            <div id="social-icons">
+                <i href="https://www.facebook.com/"><img
+                        src="https://in.sugarcosmetics.com/desc-images/facebook.svg"></i>
+                <i href="https://mail.google.com"><img
+                        src="https://www.seekpng.com/png/small/983-9831667_012-329-email-icon.png"></i>
+                <i href="https://www.instagram.com/accounts/login/"><img
+                        src="https://in.sugarcosmetics.com/desc-images/Instagram.svg"></i>
+                <i href="https://in.pinterest.com/login/"><img
+                        src="https://in.sugarcosmetics.com/desc-images/Pinterest.svg"></i>
+                <i href="https://www.tumblr.com/tagged/login?sort=top"><img
+                        src="https://in.sugarcosmetics.com/desc-images/Tumblr.svg"></i>
+                <i href="https://www.youtube.com/"><img src="https://in.sugarcosmetics.com/desc-images/Youtube.svg"></i>
+                <i href="https://twitter.com/i/flow/login"><img
+                        src="https://cdn-icons-png.flaticon.com/512/107/107195.png"></i>
+            </div>
+            <div class="middle-div">
+                <div class="middle-div-half">
+                    <h4 class="h4-div">SUBSCRIBE TO OUR NEWSLETTER</h4>
+                    <div id="email-div">
+                        <input type="email" placeholder="Your email address" />
+                        <button>SIGN UP</button>
+                    </div>
+                </div>
+                <div class="middle-div-half">
+                    <h4 class="h4-div">GET THE NEW SUGAR APP TODAY</h4>
+                    <div id="app-div">
+                        <div class="h4-div">Tap into a better shopping experience</div>
+                        <img src="https://in.sugarcosmetics.com/playstore.png" />
+                        <img src="	https://in.sugarcosmetics.com/apple-store.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="information-div">
+                <h4>INFORMATION</h4>
+                <div id="sub-info">
+                    <a href="">Stores</a>
+                    <a href="">Terms & Conditions</a>
+                    <a href="">Returns</a>
+                    <a href="">FAQs</a>
+                    <a href="">About Us</a>
+                </div>
+            </div>
+            <div class="get-div">
+                <h4>GET IN TOUCH</h4>
+                <div id="sub-get-div">
+                    <div>
+                        <div id="call-us">
+                            <img src="https://in.sugarcosmetics.com/desc-images/phone_android_white.svg" />
+                            <div>Call us at</div>
+                        </div>
+                        <a href="#">1800-209-9933</a>
+                        <div style="color:#999999; font-size:12px">Monday to Friday : 9 AM to 7 PM </div>
+                    </div>
+                    <div>
+                        <div>Support</div>
+                        <a href="">hello@sugarcosmetics.com</a>
+                    </div>
+                    <div>
+                        <div>Careers</div>
+                        <a href="">We're hiring!</a>
+                    </div>
+                    <div>
+                        <div>PRESS & MEDIA</div>
+                        <a href="">pr@sugarcosmetics.com</a>
+                    </div>
+                    <div>
+                        <div>INFLUENCER COLLAB</div>
+                        <a href="">JOIN US</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="copy-right">
+            Copyright © 2022 SUGAR Cosmetics. All rights reserved.
+        </div>
+    </div>
+ <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
+</html>
+<script src="./scripts/index.js"></script>

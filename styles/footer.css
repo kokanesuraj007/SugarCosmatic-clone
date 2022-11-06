@@ -1,0 +1,143 @@
+.footer_container{
+    background-color:#000000 ;
+    padding:20px;
+    color:#ffffff;
+    font-family: sans-serif;
+}
+.sub-footer{
+    width:80%;
+    margin: auto;
+    margin-bottom: 50px;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+#img-site>img{
+    width:120px;
+    height:120px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin:auto;   
+}
+#social-icons{
+    display:flex;
+    gap:22px;
+    justify-content: center;
+}
+#social-icons>i>img{
+    width:18px;
+    height:18px;
+    cursor: pointer;
+}
+.middle-div{
+    display:flex;
+    gap:30px;
+}
+.middle-div-half{
+    width:48%;
+}
+#email-div>input{
+    padding:10px;
+    font-size: 20px;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    color:#ffffff;
+}
+#email-div{
+    display:flex;
+}
+#email-div>button{
+    width:100px;
+    /* height:40px; */
+    padding: 7px 15px;
+    margin-top: 20px;
+    border: 1px solid #fc2779;
+    background-color: #fc2779;
+    font-family: Poppins,sans-serif;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0.25rem!important;
+    text-transform: none;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+#app-div{
+    display: flex;
+    gap:15px;
+}
+#app-div>div{
+    color:#999999;
+    width:200px;
+    height:48px;
+}
+.h4-div{
+    color:#ffffff;
+    font-family: Poppins,sans-serif
+}
+#app-div>img{
+    height: 30px;
+    cursor: pointer;
+}
+#sub-info>a{
+    text-decoration: none;
+    color:#999999;
+}
+
+#sub-info{
+    width:60%;
+    display:flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+#sub-info>a:hover{
+    color:#ffffff;
+    text-decoration: underline;
+}
+#sub-get-div{
+    display:flex;
+    justify-content: space-between;
+}
+#sub-get-div>div{
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+}
+#sub-get-div>div>a{
+    text-decoration: none;
+    color:#999999; 
+}
+#sub-get-div>div>a:hover{
+    color:#ffffff;
+    text-decoration: underline; 
+}
+#call-us{
+    display:flex;
+    gap:5px;
+}
+#call-us>img{
+    width:22px;
+    height:15px;
+}
+.copy-right{
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+}
+@media all and (min-width:421px) and (max-width:720px){
+    .middle-div{
+        display:flex;
+        gap:0px;
+    } 
+  
+}
+@media all and (min-width:80px) and (max-width:420px){
+    .middle-div{
+        display:flex;
+        gap:0px;
+    }
+ 
+}
